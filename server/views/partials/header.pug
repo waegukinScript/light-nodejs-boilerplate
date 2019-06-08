@@ -1,0 +1,25 @@
+header(role='banner')
+  nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+    .container
+      a.navbar-brand(href='/') Eatery
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExample05', aria-controls='navbarsExample05', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsExample05.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto.pl-lg-5.pl-0
+          li.nav-item
+            a.nav-link.active(href='/') Home
+          li.nav-item
+            a.nav-link(href='/recipes') Recipes
+          li.nav-item.dropdown
+            a#dropdown04.nav-link.dropdown-toggle(href='/services', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Services
+            .dropdown-menu(aria-labelledby='dropdown04')
+              a.dropdown-item(href='/services') Catering
+              a.dropdown-item(href='/services') Birthday Party
+              a.dropdown-item(href='/services') Wedding Party
+          li.nav-item
+            a.nav-link(href='/about') About
+          li.nav-item
+            a.nav-link(href='/news') News
+        ul.navbar-nav.ml-auto
+          li.nav-item.cta-btn
+            a.nav-link(href='/contact') Contact Us

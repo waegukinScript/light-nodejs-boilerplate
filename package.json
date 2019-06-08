@@ -1,0 +1,33 @@
+{
+  "name": "light-nodejs-boilerplate",
+  "version": "1.0.0",
+  "description": "light node js boilerplate pug nodemailer",
+  "author": "WaegukinScript",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "npm rebuild node-sass",
+    "dev": "cross-env NODE_ENV=develpment nodemon server/app.js",
+    "start": "cross-env NODE_ENV=production node server/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "chalk": "^2.4.2",
+    "compression": "^1.7.4",
+    "dotenv": "^8.0.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-validator": "^5.3.1",
+    "jquery": "^3.4.1",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.12.0",
+    "node-sass-middleware": "^0.11.0",
+    "nodemailer": "^6.2.1",
+    "popper.js": "^1.15.0",
+    "pug": "^2.0.3",
+    "validator": "^11.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

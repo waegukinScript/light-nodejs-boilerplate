@@ -1,0 +1,57 @@
+extends layout
+
+block content
+  section.home-slider-loop-false.inner-page.owl-carousel
+    .slider-item(style="background-image: url('img/hero_2.jpg');")
+      .container
+        .row.slider-text.align-items-center.justify-content-center
+          .col-md-8.text-center.col-sm-12.element-animate
+            h1 Contact Us
+            
+  section.section.element-animate
+    .clearfix.mb-5.pb-5
+      .container-fluid
+        .row
+          .col-md-12.text-center.heading-wrap
+            h2 Get In Touch
+            span.back-text Contact Form
+    .container
+      .row
+        .col-lg-6
+          form#contact(method='POST')
+            .row
+              .col-md-6.form-group
+                label(for='name') Name
+                input#name.form-control(type='text' name='name')
+                div.invalid-feedback 
+              .col-md-6.form-group
+                label(for='phone') Phone
+                input#phone.form-control(type='text' name='phone')
+                div.invalid-feedback 
+            .row
+              .col-md-12.form-group
+            .row
+              .col-md-12.form-group
+                label(for='email') Email
+                input#email.form-control(type='email' name='email')
+                div.invalid-feedback 
+            .row
+              .col-md-12.form-group
+                label(for='message') Write Message
+                textarea#message.form-control(name='message', cols='30', rows='8')
+                div.invalid-feedback 
+            .row
+              .col-md-6.form-group
+                input#send-email.btn.btn-primary(type='submit', value='Send Message')
+        .col-lg-6.pl-2.pl-lg-5
+          .col-md-8.mx-auto.contact-form-contact-info
+            h4.mb-5 Contact Details
+            p.d-flex
+              span.ion-ios-location.icon.mr-5
+              span 34 Street Name, City Name Here, United States
+            p.d-flex
+              span.ion-ios-telephone.icon.mr-5
+              span +1 242 4942 290
+            p.d-flex
+              span.ion-android-mail.icon.mr-5
+              span info@yourdomain.com
