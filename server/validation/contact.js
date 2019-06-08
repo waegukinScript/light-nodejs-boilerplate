@@ -13,7 +13,7 @@ module.exports = function validateContactInput(userInput) {
   if (Validator.isEmpty(userInput.name)) {
     errors.name = "Name field is required.";
   } else if (!Validator.isLength(userInput.name, { min: 3 })) {
-    errors.name = "Name should be at least 3 characters long.";
+    errors.name = "Name is too short.";
   } else if (!Validator.isLength(userInput.name, { max: 30 })) {
     errors.name = "Name is too long.";
   }
