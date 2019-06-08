@@ -26,7 +26,7 @@ Template: [Eatery][eatery]
     ├── views           // pug files
         └── partials
     ├── app.js          // server
-├── .env                // (PORT, SERVICE, EMAIL, PASSWORD)
+├── .env                // (PORT, EMAIL_SERVICE, EMAIL, PASSWORD)
 ├── .gitignore
 ├── package.json
 ├── README.md
