@@ -2,7 +2,6 @@ const Validator = require("validator");
 const isEmpty = require("./is-empty");
 
 module.exports = function validateContactInput(userInput) {
-  // console.log("userInput ", userInput);
   let errors = {};
   userInput.name = !isEmpty(userInput.name) ? userInput.name : "";
   userInput.phone = !isEmpty(userInput.phone) ? userInput.phone : "";

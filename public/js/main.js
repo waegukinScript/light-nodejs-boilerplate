@@ -223,7 +223,7 @@
       dataType: "json",
       data: contactForm.serialize(),
       success: function(data) {
-        console.log("success: ", data);
+        // console.log("success: ", data);
         name.removeClass("is-invalid");
         phone.removeClass("is-invalid");
         email.removeClass("is-invalid");
@@ -231,14 +231,21 @@
 
         sendEmail.val("Message Sent!");
         sendEmail.attr("disabled", true);
+        sendEmail.addClass("btn-success");
 
         setTimeout(function() {
           sendEmail.val("Send Message");
           sendEmail.attr("disabled", false);
+          sendEmail.removeClass("btn-success");
         }, 3000);
+
+        name.val("");
+        phone.val("");
+        email.val("");
+        message.val("");
       },
       error: function(err) {
-        console.log("error: ", err.responseJSON);
+        // console.log("error: ", err.responseJSON);
         if (err.responseJSON.name) {
           name.addClass("is-invalid");
           name.next().text(err.responseJSON.name);
